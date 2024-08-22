@@ -5,6 +5,7 @@ const Card = ({ servicesdata }) => {
   const [data, setData] = useState(servicesdata);
   const handleDelete = (id) => {
     setData(data.filter((val) => val.id !== id));
+    console.log("changees")
   };
   return (
     <>
