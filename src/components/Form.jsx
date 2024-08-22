@@ -8,6 +8,7 @@ const Form = () => {
   const subjectRef = useRef();
   const messageRef = useRef();
   const handleSubmit = () => {
+    console.log('asdasdfasdf');
     const messageInfo = {
       name: nameRef.current.value,
       email: mailRef.current.value,
