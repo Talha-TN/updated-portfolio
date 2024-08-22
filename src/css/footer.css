@@ -1,0 +1,38 @@
+/* footer.css */
+
+.footer {
+  max-width: 1080px;
+    padding: 20px 0;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 1080px;
+    margin: auto;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .social-media {
+    margin-bottom: 10px;
+  }
+  
+  .social-media a {
+    margin: 0 10px;
+ 
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .social-media a:hover {
+    color: #ff9800;
+  }
+  
+  .footer-text {
+    font-size: 14px;
+  }
+  
