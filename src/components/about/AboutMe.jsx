@@ -45,7 +45,7 @@ import React from "react";
 const AboutMe = () => {
   return (
     <section className="text-white">
-        <h2 className="text-2xl font-bold mb-4 text-blue-400 text-center">About Me</h2>
+        
       <div>
         <p className="text-sm leading-relaxed text-gray-300 mb-4 w-[600px]">
           Hi, I am Talha, a recent graduate with a BS in Software Engineering
@@ -60,7 +60,7 @@ const AboutMe = () => {
           collaboration.
         </p>
 
-        <p className="text-sm font-semibold mb-2 text-white">
+        <p className="text-sm font-semibold mb-2 text-gray-400">
           Here are a few technologies I’ve been working with recently:
         </p>
 

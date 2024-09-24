@@ -17,11 +17,14 @@ import AboutMeImage from './AboutMeImage';
 
 const About = () => {
   return (
-    <section className="flex flex-col md:flex-row items-center md:items-start justify-between text-white space-y-6 md:space-y-0 md:space-x-10 max-w-[1080px] mx-auto px-2 py-6 mt-[100px]">
+    <>
+    <h1 className='text-blue-400 text-2xl text-center mt-[100px]'>About me</h1>
+    <section className="flex flex-col md:flex-row items-center md:items-center justify-between text-white  md:space-y-0 md:space-x-10 max-w-[1080px] mx-auto  ">
       
       <AboutMe />
       <AboutMeImage />
     </section>
+    </>
   );
 };
 
