@@ -20,11 +20,11 @@ import typescript from "../assets/images/typescript.png";
 export const servicesData = [
   {
     source: react,
-    tooltipText:"React"
+    tooltipText:"React Js"
   },
   {
     source: next,
-    tooltipText:"next"
+    tooltipText:"Next.Js"
   },
   {
     source: redux,
@@ -39,8 +39,12 @@ export const servicesData = [
     tooltipText:"css"
   },
   {
+    source: javascript,
+    tooltipText:"javascript"
+  },
+  {
     source: tailwind,
-    tooltipText:"tailwind"
+    tooltipText:"tailwind css"
   },
 
   {
@@ -61,11 +65,11 @@ export const servicesData = [
   },
   {
     source: mongoDb,
-    tooltipText:"mongoDb"
+    tooltipText:"mongo Db"
   },
   {
     source: nodeJs,
-    tooltipText:"nodeJs"
+    tooltipText:"node Js"
   },
   {
     source: sass,

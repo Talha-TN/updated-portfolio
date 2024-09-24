@@ -1,9 +1,9 @@
 import React from 'react'
-
+import About from "../components/about/About.jsx"
 const AboutPage = () => {
   return (
     <div>
-  
+    <About/>
     </div>
   )
 }

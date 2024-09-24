@@ -6,7 +6,7 @@ import ServicesHeading from "./ServicesHeading";
 const Services = () => {
   return (
     <div className="text-white max-w-[1080px] mx-auto mt-20 px-6">
-     <ServicesHeading
+     <ServicesHeading/>
       <div className="flex flex-col md:flex-row justify-between items-center">
        <ServicesImage/>
         <div className="md:w-1/2 space-y-6 flex flex-col gap-2">

@@ -7,7 +7,7 @@ const HeroImage = () => {
     <img
       src={Profile}
       alt="hero-image"
-      className="w-[420px] h-[400px] rounded-md custom-hover-shadow"
+      className="w-[420px] h-[400px] rounded-lg custom-hover-shadow"
     />
   );
 };

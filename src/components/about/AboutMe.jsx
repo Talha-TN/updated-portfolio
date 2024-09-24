@@ -45,9 +45,8 @@ import React from "react";
 const AboutMe = () => {
   return (
     <section className="text-white">
+        <h2 className="text-2xl font-bold mb-4 text-blue-400 text-center">About Me</h2>
       <div>
-        <h2 className="text-2xl font-bold mb-4 text-blue-400">About Me</h2>
-
         <p className="text-sm leading-relaxed text-gray-300 mb-4 w-[600px]">
           Hi, I am Talha, a recent graduate with a BS in Software Engineering
           from Lahore Garrison University. I’m passionate about full-stack web
