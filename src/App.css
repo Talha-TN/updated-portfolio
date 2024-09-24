@@ -1,6 +1,14 @@
-*{
-  
- list-style: none;
-    color: black;
-   
+body{
+    background-color: #1F2937;
 }
+.custom-hover-shadow {
+    transition: box-shadow 0.3s ease-in-out;
+    box-shadow: 8px 8px 8px rgba(255, 255, 255, 0.5); /* Subtle default shadow */
+  }
+  
+  .custom-hover-shadow:hover {
+    cursor: pointer;
+    box-shadow: 
+      0 20px 30px rgba(255, 255, 255, 0.8); /* Larger shadow on hover */
+  }
+  
