@@ -14,7 +14,7 @@ const ServicesParas = () => {
       {paragraphs.map((text, index) => {
         const [ref, inView] = useInView({
           threshold: 0.1,
-          triggerOnce: true,
+          triggerOnce: false,
         });
 
         return (

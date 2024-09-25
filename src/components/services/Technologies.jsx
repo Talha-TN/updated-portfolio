@@ -32,7 +32,7 @@ const Technologies = () => {
   // Create a reference for the component and check if it's in view
   const [ref, inView] = useInView({
     threshold: 0.2, // 20% of the component is visible
-    triggerOnce: true, // Only trigger once when the component enters the viewport
+    triggerOnce: false, // Only trigger once when the component enters the viewport
   });
 
   return (

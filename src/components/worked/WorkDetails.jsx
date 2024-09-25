@@ -28,7 +28,7 @@ const itemVariants = {
 const WorkDetails = () => {
   const [ref, inView] = useInView({
     threshold: 0.2, // Triggers when 20% of the element is visible
-    triggerOnce: true, // Trigger only once
+    triggerOnce: false, // Trigger only once
   });
 
   return (
