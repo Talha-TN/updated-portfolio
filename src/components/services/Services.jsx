@@ -3,6 +3,7 @@ import Technologies from "./Technologies";
 import ServicesImage from "./ServicesImage";
 import ServicesParas from "./ServicesParas";
 import ServicesHeading from "./ServicesHeading";
+
 const Services = () => {
   return (
     <div id="services" className="text-white max-w-[1080px] mx-auto mt-16 px-6 paragraph">
