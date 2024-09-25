@@ -3,13 +3,45 @@ import React from "react";
 import { FaLinkedin } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
 import { FaGithub } from "react-icons/fa";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
+// Animation variants for the footer
+const containerVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { 
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: "easeInOut" }
+  }
+};
+
+const iconVariants = {
+  hidden: { opacity: 0, scale: 0.8 },
+  visible: { 
+    opacity: 1,
+    scale: 1,
+    transition: { duration: 0.3, ease: "easeInOut" }
+  }
+};
 
 const Footer = () => {
   const spanColor = "text-2xl text-gray-400 hover:text-blue-400 cursor-pointer";
-  
+  const [ref, inView] = useInView({
+    threshold: 0.2,
+    triggerOnce: true,
+  });
+
   return (
-    <div id="footer" className="text-white max-w-[500px] m-auto mt-20 paragraph">
-      <div className="">
+    <motion.div
+      id="footer"
+      className="text-white max-w-[500px] m-auto mt-20 paragraph"
+      ref={ref}
+      variants={containerVariants}
+      initial="hidden"
+      animate={inView ? "visible" : "hidden"}
+    >
+      <div>
         <h1 className="text-center text-blue-400 font-semibold text-2xl">
           Get in Touch
         </h1>
@@ -21,7 +53,7 @@ const Footer = () => {
         </p>
       </div>
       <div className="flex justify-center items-center gap-3 mt-4 pb-10">
-        <span className={spanColor}>
+        <motion.span className={spanColor} variants={iconVariants}>
           <a
             href="https://www.linkedin.com/in/talha-nawaz-5421931a4/"
             target="_blank"
@@ -29,8 +61,8 @@ const Footer = () => {
           >
             <FaLinkedin />
           </a>
-        </span>
-        <span className={spanColor}>
+        </motion.span>
+        <motion.span className={spanColor} variants={iconVariants}>
           <a
             href="mailto:nawazt964@gmail.com"
             target="_blank"
@@ -38,8 +70,8 @@ const Footer = () => {
           >
             <IoMail />
           </a>
-        </span>
-        <span className={spanColor}>
+        </motion.span>
+        <motion.span className={spanColor} variants={iconVariants}>
           <a
             href="https://github.com/Talha-TN"
             target="_blank"
@@ -47,9 +79,9 @@ const Footer = () => {
           >
             <FaGithub />
           </a>
-        </span>
+        </motion.span>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

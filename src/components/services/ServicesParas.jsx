@@ -1,29 +1,37 @@
-import React from 'react'
+import React from 'react';
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 const ServicesParas = () => {
+  const paragraphs = [
+    "Building responsive static/dynamic websites using Next.js",
+    "Building responsive Single Page Apps in React.js",
+    "Converting Figma designs into Webpages",
+  ];
+
   return (
     <div className="space-y-4 text-gray-300">
-    <p className="leading-relaxed">
-      Building responsive static/dynamic websites using Next.js
-    </p>
-    <p className="leading-relaxed">
-      Building responsive Single Page Apps in React.js
-    </p>
-    <p className="leading-relaxed">
-      Converting Figma designs into Webpages
-    </p>
-  </div>
-  )
-}
+      {paragraphs.map((text, index) => {
+        const [ref, inView] = useInView({
+          threshold: 0.1,
+          triggerOnce: true,
+        });
 
-export default ServicesParas
-// const ServicesParas = ({ inView }) => {
-//   return (
-//     <div className={`transition-opacity duration-1000 ease-in-out ${inView ? 'opacity-100' : 'opacity-0 translate-y-10'}`}>
-//       <p className="text-sm leading-relaxed text-gray-400 mb-4">
-//         Here you can describe the services offered or any other relevant details.
-//       </p>
-//     </div>
-//   );
-// };
-// export default ServicesParas
+        return (
+          <motion.p
+            key={index}
+            ref={ref}
+            initial={{ opacity: 0, y: 20 }} // Initial state
+            animate={inView ? { opacity: 1, y: 0 } : {}} // Animate to visible state
+            transition={{ duration: 0.5, delay: index * 0.1 }} // Delay based on index
+            className="leading-relaxed"
+          >
+            {text}
+          </motion.p>
+        );
+      })}
+    </div>
+  );
+};
+
+export default ServicesParas;
