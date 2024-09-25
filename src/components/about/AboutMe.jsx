@@ -47,7 +47,7 @@ const AboutMe = () => {
     <section className="text-white">
         
       <div>
-        <p className="text-sm leading-relaxed text-gray-300 mb-4 w-[600px]">
+        <p className="text-sm leading-relaxed text-gray-400 mb-4 w-[600px]">
           Hi, I am Talha, a recent graduate with a BS in Software Engineering
           from Lahore Garrison University. I’m passionate about full-stack web
           development and skilled in using Next.js for both front-end and

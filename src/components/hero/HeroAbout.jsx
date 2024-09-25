@@ -6,7 +6,7 @@ const HeroAbout = () => {
         <p className="text-xl text-blue-400 mb-4">Hi, my name is</p>
 
         <div className="w-full md:w-[500px] text-5xl md:text-3xl font-bold leading-tight ">
-          <h1 className="tracking-wide">
+          <h1 className="tracking-wide text-gray-200">
             Talha Nawaz. <br />I create visually pleasing solutions for the web.
           </h1>
         </div>

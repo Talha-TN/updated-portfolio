@@ -1,13 +1,26 @@
 import "./App.css";
-import AllRoutes from "./routes/AllRoutes";
 import Header from "./components/header/Header";
-import Services from "./components/services/Services";
+import Hero from "../src/components/hero/Hero.jsx";
+import About from "../src/components/about/About.jsx";
+import Services from "../src/components/services/Services";
+import Projects from "../src/components/projects/Projects.jsx";
+import Work from "../src/components/worked/Work.jsx";
+import Footer from "../src/components/footer/Footer.jsx";
+
+
 function App() {
   return (
     <>
-    <Header/>
-    <AllRoutes/>
- 
+   
+      <Header />
+      <Hero/>
+      <About/>
+      <Services/>
+      <Projects/>
+      <Work/>
+      <Footer/>
+      
+     
     </>
   );
 }
