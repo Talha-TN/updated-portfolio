@@ -5,6 +5,7 @@ import portfolio from "../assets/images/portfolio.png"
 import shopmate from "../assets/images/shomate.png"
 import movies from "../assets/images/movies.png"
 import todo from "../assets/images/todo.png"
+import wordCounter from "../assets/images/word-counter.png"
 
 const projectsData = [
   {
@@ -88,6 +89,18 @@ const projectsData = [
       third: "tailwind css",
     },
     github: "https://github.com/Talha-TN/Dice-Rolling-Game",
+    websitelink: "https://talha-tn.github.io/Dice-Rolling-Game/",
+    date:"2024"
+  },
+  {
+    image: wordCounter,
+    name: "words counter app",
+    technologies: {
+      first: "HTML-CSS",
+      second: "Javascript",
+      third: "react",
+    },
+    github: "https://github.com/Talha-TN/react-word-counter",
     websitelink: "https://talha-tn.github.io/Dice-Rolling-Game/",
     date:"2024"
   },
