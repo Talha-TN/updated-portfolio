@@ -160,7 +160,7 @@ const Header = () => {
       initial="hidden"
       animate="visible"
       variants={headerVariants}
-      className="mt-4 bg-gray-800 text-white py-4 shadow-lg max-w-[1080px] mx-auto flex justify-between items-center px-4 flex-wrap relative"
+      className="mt-4 ml-12 bg-gray-800 text-white py-4 shadow-lg max-w-[1080px] mx-auto flex justify-between items-center px-4 flex-wrap relative"
     >
       {/* Logo and Title */}
       <motion.div variants={headerVariants}>
