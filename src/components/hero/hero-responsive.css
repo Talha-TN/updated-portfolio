@@ -1,0 +1,36 @@
+@media (max-width: 768px) {
+    .hero-responsive{
+        margin-top: 30px;
+    }
+    .myname-responsive{
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    .para-responsive{
+        font-size: 20px;
+        /* text-align: center; */
+        line-height: 34px;
+        width: 418px;
+        text-align: center;
+    }
+    .para-div{
+        width: 400px;
+        width: 360px;
+        margin: auto;
+    }
+    .about-para{
+        width: 360px;
+        margin: auto;
+
+    }
+    .freelance{
+        text-align: center;
+        font-size: 16px;
+        margin-top: 0px;
+    }
+    .responsive{
+       margin-left: 45px;
+       margin-top: 20px;
+  }
+
+}

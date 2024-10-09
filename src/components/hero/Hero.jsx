@@ -3,6 +3,7 @@ import React from 'react';
 import HeroAbout from './HeroAbout';
 import HeroImage from './HeroImage';
 import { motion } from 'framer-motion';
+import "./hero-responsive.css"
 
 // Define animation variants
 const heroVariants = {
@@ -39,7 +40,7 @@ const imageVariants = {
 const Hero = () => {
   return (
     <motion.main
-      className="text-white flex items-start justify-between max-w-[1080px] mx-auto mt-20 flex-wrap paragraph"
+      className=" text-white flex items-start justify-between max-w-[1080px] mx-auto mt-10 flex-wrap paragraph"
       variants={heroVariants} // Apply parent animation
       initial="hidden"
       animate="visible"
@@ -50,8 +51,8 @@ const Hero = () => {
       </motion.div>
 
       {/* HeroImage section sliding in from the right */}
-      <motion.div variants={imageVariants}>
-        <HeroImage />
+      <motion.div variants={imageVariants} >
+        <HeroImage  />
       </motion.div>
     </motion.main>
   );
