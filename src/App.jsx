@@ -11,7 +11,6 @@ import Footer from "../src/components/footer/Footer.jsx";
 function App() {
   return (
     <>
-   
       <Header />
       <Hero/>
       <About/>
@@ -19,8 +18,6 @@ function App() {
       <Projects/>
       <Work/>
       <Footer/>
-      
-     
     </>
   );
 }

@@ -11,20 +11,3 @@ const ServicesImage = () => {
 };
 
 export default ServicesImage;
-////////////
-// import React from "react";
-// import Lottie from "lottie-react";
-// import animation from "../../assets/images/Animation.json";
-
-// const ServicesImage = () => {
-//   return (
-//     <div className="mb-2 md:mb-0 md:w-1/2 flex justify-center md:justify-start">
-//       <Lottie
-//         animationData={animation}
-//         className="w-[300px] sm:w-[350px] md:w-[400px] lg:w-[450px] rounded-lg"
-//       />
-//     </div>
-//   );
-// };
-
-// export default ServicesImage;

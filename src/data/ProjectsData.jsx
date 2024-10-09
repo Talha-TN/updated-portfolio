@@ -44,18 +44,6 @@ const projectsData = [
     websitelink: "https://talha-tn.github.io/My-portfolio/",
     date:"2024"
   },
-  // {
-  //   image: positivius,
-  //   name: "Positivius",
-  //   technologies: {
-  //     first: "React Js",
-  //     second: "Tailwind css",
-  //     third: "HTML-CSS",
-  //   },
-  //   github: "https://github.com/Talha-TN/figma-positivus",
-  //   websitelink: "https://positivus-t.netlify.app",
-  //   date:"2024"
-  // },
   {
     image: todo,
     name: "Todo app",
