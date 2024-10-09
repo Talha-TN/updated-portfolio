@@ -286,7 +286,7 @@ const Header = () => {
               className="border border-blue-500 p-1 px-2 ml-1 text-blue-400 hover:text-gray-400 transition duration-300"
               onClick={toggleNavbar}
             >
-              Resume
+              Resumeee
             </a>
           </ul>
         </motion.nav>
