@@ -60,11 +60,11 @@
 // export default Projects;
 
 /////////////
-import React from 'react';
+import React, {Suspense} from 'react';
 import ProjectsCard from './ProjectsCard';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-
+const lazy = React.lazy(()=>import("./ProjectsCard"))
 // Animation Variants for the container and children
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -112,7 +112,10 @@ const Projects = () => {
       </motion.div>
 
       <motion.div className="mt-12" variants={itemVariants}>
+        <Suspense fallback={<h1 className='text-white text-2xl'>Loading projects</h1>}>
         <ProjectsCard />
+        </Suspense>
+        
       </motion.div>
     </motion.div>
   );
