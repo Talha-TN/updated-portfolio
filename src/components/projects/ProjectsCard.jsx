@@ -106,6 +106,7 @@ const ProjectsCard = () => {
           >
             <div className="w-full h-48 md:h-56 lg:h-40 bg-gray-900 flex items-center justify-center">
               <img 
+                loading="lazy"
                 src={project.image} 
                 alt="project-image" 
                 className="w-full h-full object-cover" // Changed to object-cover for better responsiveness

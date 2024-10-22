@@ -102,7 +102,7 @@ const itemVariants = {
 const Technologies = () => {
   const [ref, inView] = useInView({
     threshold: 0.2,
-    triggerOnce: false,
+    triggerOnce: true,
   });
 
   return (

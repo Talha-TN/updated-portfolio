@@ -117,7 +117,7 @@ const Footer = () => {
   const spanColor = "text-2xl text-gray-400 hover:text-blue-400 cursor-pointer transition-colors duration-300";
   const [ref, inView] = useInView({
     threshold: 0.2,
-    triggerOnce: false,
+    triggerOnce: true,
   });
 
   return (

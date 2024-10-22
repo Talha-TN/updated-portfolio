@@ -3,14 +3,14 @@ import React from "react";
 const HeroAbout = () => {
   return (
     <>
-      <div className="flex flex-col gap-2 flex-wrap lg:gap-2">
+      <div className="flex flex-col items-center gap-4 ">
         <p className="text-xl text-blue-400 mb-4 myname-responsive lg:mt-4">Hi, my name is</p>
-        <div className="para-div w-full md:w-[500px] text-5xl md:text-3xl font-bold leading-tight ">
+        <div className="text-2xl text-center">
           <h1 className="para-responsive tracking-wide text-gray-200">
             Talha Nawaz. <br />I create visually pleasing solutions for the web.
           </h1>
         </div>
-        <p className=" about-para text-lg text-gray-400 max-w-[520px] mb-6">
+        <p className="  text-lg text-gray-400 mb-6 ml-6 ">
           I'm a Front-End Web Developer who turns ideas into dynamic web
           experiences. With React.js for creating interactive user interfaces
           and Tailwind CSS for efficient and responsive styling, I bring designs

@@ -18,7 +18,7 @@ import workanimation from "../../assets/images/work2.json";
 const WorkAnimation = () => {
   return (
     <div className="flex justify-center mt-4 md:mt-0">
-      <Lottie animationData={workanimation} className='w-[300px] md:w-[400px] h-[300px] md:h-[400px]' />
+      <Lottie loading="lazy"  animationData={workanimation} className='w-[300px] md:w-[400px] h-[300px] md:h-[400px]' />
     </div>
   );
 };

@@ -100,7 +100,7 @@ import { motion } from "framer-motion";
 const AboutMe = () => {
   const { ref, inView } = useInView({
     threshold: 0.1,
-    triggerOnce: false,
+    triggerOnce: true,
   });
 
   const containerVariants = {
@@ -139,7 +139,7 @@ const AboutMe = () => {
         {/* Paragraph with motion */}
         <motion.p
           variants={textVariants}
-          className="mt-4 text-xs sm:text-sm md:text-base lg:text-sm leading-relaxed text-gray-400 mb-4 max-w-[90%] sm:max-w-[600px] mx-auto sm:mx-0 responsive-about-text"
+          className="mt-4 text-[16px] sm:text-lg md:text-base lg:text-xl lg:mt-4 leading-relaxed text-gray-400 mb-4 max-w-[90%] sm:max-w-[600px] mx-auto sm:mx-0 responsive-about-text"
         >
           Hi, I am Talha, a recent graduate with a BS in Software Engineering
           from Lahore Garrison University. I’m passionate about full-stack web
@@ -156,14 +156,14 @@ const AboutMe = () => {
         {/* Subheading with motion */}
         <motion.p
           variants={textVariants}
-          className="text-xs sm:text-sm md:text-base lg:text-sm font-semibold mb-2 text-gray-400 text-center sm:text-left"
+          className="text-lg sm:text-sm md:text-base lg:text-sm font-semibold mb-2 text-gray-400 text-center sm:text-left"
         >
           Here are a few technologies I’ve been working with recently:
         </motion.p>
 
         {/* List of technologies with motion */}
         <motion.ul
-          className="ml-10 mt-4 grid grid-cols-2 gap-2 text-gray-300 text-sm sm:text-sm md:text-sm list-disc pl-5 mx-auto sm:mx-0"
+          className="ml-10 mt-4 grid grid-cols-2 gap-2 text-gray-400 text-lg sm:text-sm md:text-sm list-disc pl-5 mx-auto sm:mx-0"
           variants={containerVariants}
         >
           {[
